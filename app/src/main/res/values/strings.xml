@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Prac 10 Food Ordering</string>
     <string name="next">Next</string>
+
+    <string-array name="spinner_items">
+        <item>English</item>
+        <item>Hindi</item>
+    </string-array>
 </resources>
