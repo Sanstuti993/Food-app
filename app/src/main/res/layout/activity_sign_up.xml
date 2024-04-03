@@ -17,12 +17,12 @@
         app:srcCompat="@mipmap/logo_foreground" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/RegisterButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:background="@drawable/redbuttongradient"
-        android:text="Login"
+        android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -73,10 +73,11 @@
         android:id="@+id/DOB"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/DOB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Date"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
         app:srcCompat="@drawable/calendar_days_solid" />
 

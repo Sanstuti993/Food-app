@@ -3,37 +3,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".FoodChoiceActivity">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/loginButton1111"
+        android:id="@+id/MixFood"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="64dp"
         android:width="380dp"
         android:background="@drawable/redbuttongradient"
-        android:text="LOGIN"
+        android:onClick="onMixFoodButtonClick"
+        android:text="Mix"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NonVegFood" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/NonVegFood"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="64dp"
+        android:width="380dp"
+        android:background="@drawable/redbuttongradient"
+        android:onClick="onNonVegFoodButtonClick"
+
+        android:text="Non-Veg"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VegFood" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/VegFood"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="128dp"
+        android:width="380dp"
+        android:background="@drawable/redbuttongradient"
+        android:onClick="onVegFoodButtonClick"
 
 
+        android:text="Veg"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/registerButton11111"
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:layout_marginTop="40dp"
-        android:width="380dp"
-        android:background="@drawable/redbuttongradient"
-        android:text="New user??"
-        android:textColor="@color/white"
-
-
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vegFood" />
 </androidx.constraintlayout.widget.ConstraintLayout>

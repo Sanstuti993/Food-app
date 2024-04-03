@@ -1,6 +1,7 @@
 package com.example.prac10foodordering;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,25 +11,22 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Calendar;
 
-
-import android.os.Bundle;
-
-public class SignUpActivity extends AppCompatActivity {
-    private ImageButton  selectedDateTV;
+public class RegistrationActivity extends AppCompatActivity {
+    private ImageButton selectedDate;
     private TextView Date;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
-        selectedDateTV = findViewById(R.id.DOB);
-        Date= findViewById(R.id.Date);
+        setContentView(R.layout.activity_registration);
 
-        EditText usernameEditText = findViewById(R.id.editTextText);
-        EditText passwordEditText = findViewById(R.id.editTextTextEmailAddress);
-        Button registerButton = findViewById(R.id.RegisterButton);
+        EditText usernameEditText = findViewById(R.id.editTextText1);
+        EditText passwordEditText = findViewById(R.id.editTextTextEmailAddress1);
+        Button registerButton = findViewById(R.id.RegisterButton1);
+        Date= findViewById(R.id.Date1);
+        selectedDate = findViewById(R.id.DOB);
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,11 +37,12 @@ public class SignUpActivity extends AppCompatActivity {
                 User user = new User(username, password);
                 UserManager.getInstance().addUser(user);
 
-                startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
+                startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
                 finish();
             }
         });
-        Date.setOnClickListener(new View.OnClickListener() {
+
+        selectedDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -56,7 +55,7 @@ public class SignUpActivity extends AppCompatActivity {
 
 
                 DatePickerDialog datePickerDialog = new DatePickerDialog(
-                        SignUpActivity.this,
+                        RegistrationActivity.this,
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker view, int year,
@@ -72,6 +71,5 @@ public class SignUpActivity extends AppCompatActivity {
                 datePickerDialog.show();
             }
         });
-
     }
 }

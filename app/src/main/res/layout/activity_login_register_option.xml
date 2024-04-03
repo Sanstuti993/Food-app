@@ -3,16 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".LoginRegisterOption">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/loginButton1111"
+        android:id="@+id/vegFood"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_marginTop="200dp"
         android:width="380dp"
         android:background="@drawable/redbuttongradient"
         android:text="LOGIN"
+        android:onClick="onLoginButtonClick"
 
 
         android:textColor="@color/white"
@@ -22,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/registerButton11111"
+        android:id="@+id/Mix"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_marginTop="40dp"
@@ -30,7 +32,7 @@
         android:background="@drawable/redbuttongradient"
         android:text="New user??"
         android:textColor="@color/white"
-
+        android:onClick="onRegisterButtonClick"
 
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

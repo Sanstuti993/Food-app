@@ -10,18 +10,22 @@
         android:id="@+id/imageView"
         android:layout_width="144dp"
         android:layout_height="114dp"
-        app:srcCompat="@mipmap/logo"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="308dp" />
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/akaya_telivigala"
         android:text="Eat best"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="443dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
