@@ -10,11 +10,8 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Calendar;
-
-
-import android.os.Bundle;
 
 public class SignUpActivity extends AppCompatActivity {
     private ImageButton  selectedDateTV;
@@ -26,7 +23,7 @@ public class SignUpActivity extends AppCompatActivity {
         selectedDateTV = findViewById(R.id.DOB);
         Date= findViewById(R.id.Date);
 
-        EditText usernameEditText = findViewById(R.id.editTextText);
+        EditText usernameEditText = findViewById(R.id.Lastname);
         EditText passwordEditText = findViewById(R.id.editTextTextEmailAddress);
         Button registerButton = findViewById(R.id.RegisterButton);
 
