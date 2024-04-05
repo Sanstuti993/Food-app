@@ -14,7 +14,7 @@
         android:width="380dp"
         android:background="@drawable/redbuttongradient"
         android:onClick="onMixFoodButtonClick"
-        android:text="Mix"
+        android:text="@string/mix"
 
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -31,7 +31,7 @@
         android:background="@drawable/redbuttongradient"
         android:onClick="onNonVegFoodButtonClick"
 
-        android:text="Non-Veg"
+        android:text="@string/non_veg"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +48,7 @@
 
 
         android:onClick="onVegFoodButtonClick"
-        android:text="Veg"
+        android:text="@string/veg"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Choose Your Food"
+        android:text="@string/choose_your_food"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

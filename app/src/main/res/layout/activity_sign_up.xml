@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:background="@drawable/redbuttongradient"
-        android:text="Register"
+        android:text="@string/Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Last Name"
+        android:hint="@string/Last_name"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="@+id/editTextText"
         app:layout_constraintHorizontal_bias="1.0"
