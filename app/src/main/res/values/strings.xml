@@ -24,6 +24,8 @@
     <string name="Eat_best">Eat best</string>
     <string name="enjoy_restaurent_quality_meals_nat_home">Enjoy Restaurent Quality meals\nat home</string>
     <string name="Login">LOGIN</string>
+    <string name="area_name_residence">Area Name/ Residence</string>
+    <string name="house_no">House No.</string>
 
     <string-array name="spinner_items">
         <item>English</item>
