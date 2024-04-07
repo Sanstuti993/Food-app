@@ -34,6 +34,7 @@
         android:id="@+id/RegisterButton"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
+
         android:layout_marginTop="100dp"
         android:width="380dp"
         android:background="@drawable/redbuttongradient"
@@ -45,5 +46,6 @@
         app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
