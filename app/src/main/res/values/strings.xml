@@ -4,6 +4,6 @@
 
     <string-array name="spinner_items">
         <item>English</item>
-        <item>Hindi</item>
+        <item>Spanish</item>
     </string-array>
 </resources>
