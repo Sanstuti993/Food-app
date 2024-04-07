@@ -46,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
     public void onBack1ButtonClick(View view) {
         Intent intent = new Intent(this, LoginRegisterOption.class);
         startActivity(intent);
+        finish();
     }
     private void validateCredentials() {
         boolean isValidUser = false;

@@ -29,8 +29,7 @@
         android:layout_marginTop="64dp"
         android:width="380dp"
         android:background="@drawable/egg"
-
-        android:onClick="onMixFoodButtonClick"
+        android:onClick="onEggFoodButtonClick"
         android:text="Egg"
         android:textColor="@color/black"
         android:textSize="20sp"

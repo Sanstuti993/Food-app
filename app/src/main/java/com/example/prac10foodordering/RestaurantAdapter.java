@@ -1,5 +1,7 @@
 package com.example.prac10foodordering;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,9 +32,17 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
     public void onBindViewHolder(@NonNull RestaurantViewHolder holder, int position) {
         Restaurant restaurant = restaurantList.get(position);
         holder.imageRestaurant.setImageResource(restaurant.getImageResource());
-        holder.restaurantName.setText(restaurant.getRestaurantName());
         holder.foodName.setText(restaurant.getFoodName());
         holder.textPrice.setText(restaurant.getPrice());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Start an implicit intent to open Google
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.zomato.com"));
+                view.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -47,7 +57,6 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
         public RestaurantViewHolder(View itemView) {
             super(itemView);
             imageRestaurant = itemView.findViewById(R.id.image_restaurant);
-            restaurantName = itemView.findViewById(R.id.RestaurantName);
             foodName = itemView.findViewById(R.id.FoodName);
             textPrice = itemView.findViewById(R.id.text_price);
         }

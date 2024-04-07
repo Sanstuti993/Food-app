@@ -7,22 +7,28 @@
     tools:context=".LoginRegisterOption"
     android:background="@drawable/bg2">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF"
+    android:id="@+id/semiTransparentView" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:width="380dp"
         android:background="@drawable/redbuttongradient"
-        android:text="LOGIN"
         android:onClick="onLoginButtonClick"
 
 
+        android:text="LOGIN"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/RegisterButton" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/RegisterButton"
@@ -39,4 +45,5 @@
         app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,15 +16,23 @@ public class FoodChoiceActivity extends AppCompatActivity {
 
     public void onMixFoodButtonClick(View view) {
         startActivity(new Intent(this, MixOptionActivity.class));
+        finish();
     }
 
     public void onNonVegFoodButtonClick(View view) {
-
         startActivity(new Intent(this, NonVegOptionActivity.class));
+        finish();
     }
 
     public void onVegFoodButtonClick(View view) {
 
         startActivity(new Intent(this, VegOptionActivity.class));
+        finish();
+    }
+
+    public void onEggFoodButtonClick(View view) {
+
+        startActivity(new Intent(this, EggOptionActivity.class));
+        finish();
     }
 }

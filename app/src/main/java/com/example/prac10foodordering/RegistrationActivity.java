@@ -72,4 +72,9 @@ public class RegistrationActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void onBackButtonClick(View view) {
+        startActivity(new Intent(this, LoginRegisterOption.class));
+        finish();
+    }
 }

@@ -8,14 +8,11 @@
     >
 
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".RegistrationActivity">
-
-
-
-
 
         <ImageView
             android:id="@+id/imageView2"
@@ -26,6 +23,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@mipmap/logo_foreground" />
+
+
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/RegisterButton"
@@ -40,7 +39,11 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/PinCode" />
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33FF0000"
+            android:id="@+id/semiTransparentView1" />
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="380dp"
@@ -199,6 +202,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/City" />
 
+
+
         <ImageButton
             android:id="@+id/Back"
             android:layout_width="30dp"
@@ -207,15 +212,12 @@
             android:layout_marginEnd="348dp"
             android:background="@android:color/white"
             android:scaleType="fitCenter"
+            android:onClick="onBackButtonClick"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/angle_left_solid" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#99FFFF"
-            android:id="@+id/semiTransparentView" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

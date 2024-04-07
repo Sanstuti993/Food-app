@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="1000dp"-->
+<!--    android:layout_margin="8dp"-->
+<!--    android:background="@drawable/ic_launcher_background"-->
+<!--    android:elevation="4dp">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="1000dp"
+    android:layout_height="match_parent"
     android:layout_margin="8dp"
-    android:background="@drawable/ic_launcher_background"
+    android:background="@color/white"
     android:elevation="4dp">
 
     <ImageButton
@@ -16,6 +24,7 @@
         android:layout_marginEnd="348dp"
         android:background="@color/white"
         android:scaleType="fitCenter"
+        android:onClick="onBack3ButtonClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/angle_left_solid" />
@@ -28,9 +37,10 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:onClick="onItemClick"
         android:clipToPadding="false"
         android:padding="8dp" />
 
 
-</androidx.cardview.widget.CardView>
-
+<!--</androidx.cardview.widget.CardView>-->
+</RelativeLayout>

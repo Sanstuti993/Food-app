@@ -5,16 +5,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class VegOptionActivity extends AppCompatActivity {
+public class EggOptionActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private RestaurantAdapter adapter;
@@ -22,32 +20,30 @@ public class VegOptionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_veg_option);
+        setContentView(R.layout.activity_egg_option);
 
+        // Initialize RecyclerView
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         List<Restaurant> restaurantList = new ArrayList<>();
-        restaurantList.add(new Restaurant(R.drawable.bambayya_pav_bhaji, "pav Bhaji", "₹100"));
-        restaurantList.add(new Restaurant(R.drawable.dosa, "Dosa", "₹150"));
-        restaurantList.add(new Restaurant(R.drawable.cholebhature,  "Chole Bhature", "₹200"));
-        restaurantList.add(new Restaurant(R.drawable.chaat,  "Chaat corner", "₹250"));
+
+        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 1", "₹100"));
+        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 2", "₹150"));
+        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 3", "₹200"));
+        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 4", "₹250"));
+        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 5", "₹300"));
 
 
+        // Create RecyclerView adapter
         adapter = new RestaurantAdapter(restaurantList);
 
+        // Set adapter to RecyclerView
         recyclerView.setAdapter(adapter);
-
     }
-    public void onBack3ButtonClick(View view) {
-        startActivity(new Intent(this, FoodChoiceActivity.class));
+
+    public void onBack7ButtonClick(View view) {
+        startActivity(new Intent(EggOptionActivity.this, FoodChoiceActivity.class));
         finish();
     }
-    public void onItemClick(View view) {
-        Uri uri = Uri.parse("https://www.google.com");
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
-    }
-
-
 }

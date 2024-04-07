@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="true"
     tools:context=".itemRestaurent">
 
     <!-- item_restaurant.xml -->
@@ -22,15 +23,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_background"
             app:srcCompat="@android:drawable/ic_delete" />
-
-        <TextView
-            android:id="@+id/RestaurantName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/restaurant_name"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="8dp"/>
 
         <TextView
             android:id="@+id/FoodName"

@@ -12,7 +12,6 @@ public class StartActivity extends AppCompatActivity {
 
     private ActivityStartBinding binding;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -17,10 +17,12 @@ public class LoginRegisterOption extends AppCompatActivity {
     public void onLoginButtonClick(View view) {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void onRegisterButtonClick(View view) {
         Intent intent = new Intent(this, RegistrationActivity.class);
         startActivity(intent);
+        finish();
     }
 }
