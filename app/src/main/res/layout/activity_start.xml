@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/logo_foreground" />
+        app:srcCompat="@drawable/logo1" />
 
     <TextView
         android:id="@+id/textView"
@@ -37,7 +37,7 @@
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="57dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="76dp"
         android:width="150dp"
         android:background="@drawable/redbuttongradient"
         android:text="@string/next"
@@ -47,9 +47,6 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

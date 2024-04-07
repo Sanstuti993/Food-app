@@ -28,14 +28,15 @@
         android:id="@+id/RegisterButton"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="100dp"
         android:width="380dp"
         android:background="@drawable/redbuttongradient"
-        android:text="@string/new_user"
-        android:textColor="@color/white"
         android:onClick="onRegisterButtonClick"
-
+        android:text="New User??"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
 </androidx.constraintlayout.widget.ConstraintLayout>

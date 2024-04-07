@@ -27,6 +27,9 @@
     <string name="area_name_residence">Area Name/ Residence</string>
     <string name="house_no">House No.</string>
 
+    <string name="New_user">New User</string>
+
+
     <string-array name="spinner_items">
         <item>English</item>
         <item>Spanish</item>
