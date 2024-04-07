@@ -5,7 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
+    android:background="@drawable/bg2"
    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99FFFFFF"
+        android:id="@+id/semiTransparentView" />
 
     <ImageButton
         android:id="@+id/Back1"
@@ -36,6 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/login_to_your_account"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -46,9 +54,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#292424"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textEmailAddress"
+        android:textColor="#131111"
+        android:textStyle="bold"
+        android:textColorHint="#636160"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="@+id/textView3"
@@ -62,6 +74,8 @@
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
+        android:textColorHint="#636160"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/UsernameLogin"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/UsernameLogin"
@@ -97,6 +111,7 @@
         android:layout_marginTop="120dp"
         android:text="Languages"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/spinner"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

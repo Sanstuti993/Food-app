@@ -4,12 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg2"
     >
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".RegistrationActivity">
+
+
+
 
 
         <ImageView
@@ -45,6 +50,8 @@
             android:ems="10"
             android:hint="@string/area_name_residence"
             android:inputType="textEmailAddress"
+            android:textColorHint="#636160"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/Lastname"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/Lastname"
@@ -203,6 +210,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/angle_left_solid" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99FFFF"
+            android:id="@+id/semiTransparentView" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
