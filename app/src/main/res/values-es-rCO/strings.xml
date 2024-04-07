@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prac 10 Food Ordering</string>
+    <string name="next">próxima</string>
+    <string name="new_user">Nueva usuaria</string>
+    <string name="mix">mezcla</string>
+    <string name="non_veg">no vegetales</string>
+    <string name="veg">verduras</string>
+    <string name="choose_your_food">Elige tu comida</string>
+    <string name="restaurant_name">Nombre del restaurante</string>
+    <string name="food_name">Nombre del alimento</string>
+    <string name="_200_for_one">200 rupias por uno</string>
+    <string name="login_to_your_account">Ingrese a su cuenta</string>
+    <string name="username">nombre de usuario</string>
+    <string name="password">contraseña</string>
+    <string name="login">acceso</string>
+    <string name="languages">Idiomas</string>
+    <string name="eat_best">Eat best</string>
+    <string name="register">Registro</string>
+    <string name="last_name">Apellido</string>
+    <string name="first_name">Nombre de pila</string>
+    <string name="d_o_b">fecha de nacimiento</string>
+    <string name="Register">Registro</string>
+    <string name="Last_name">Apellido</string>
+    <string name="Eat_best">Eat best</string>
+    <string name="enjoy_restaurent_quality_meals_nat_home">Disfrute de comidas de calidad en el restaurante.</string>
+    <string name="Login">acceso</string>
+    <string name="New_user">¿Nueva usuaria ??</string>
+</resources>

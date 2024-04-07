@@ -13,7 +13,7 @@
         android:layout_marginTop="200dp"
         android:width="380dp"
         android:background="@drawable/redbuttongradient"
-        android:text="LOGIN"
+        android:text="@string/Login"
 
 
         android:textColor="@color/white"
@@ -28,13 +28,10 @@
         android:layout_height="80dp"
         android:width="380dp"
         android:background="@drawable/redbuttongradient"
-        android:text="New user??"
+        android:text="@string/New_user"
         android:textColor="@color/white"
-
-
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="385dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

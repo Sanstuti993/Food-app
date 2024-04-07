@@ -1,6 +1,31 @@
 <resources>
     <string name="app_name">Prac 10 Food Ordering</string>
     <string name="next">Next</string>
+    <string name="new_user">New user??</string>
+    <string name="mix">Mix</string>
+    <string name="non_veg">Non-Veg</string>
+    <string name="veg">Veg</string>
+    <string name="choose_your_food">Choose Your Food</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="food_name">Food Name</string>
+    <string name="_200_for_one">₹200 for one</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="languages">Languages</string>
+    <string name="eat_best">Eat best</string>
+    <string name="register">Register</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="d_o_b">D.O.B</string>
+    <string name="Register">Register</string>
+    <string name="Last_name">Last Name</string>
+    <string name="Eat_best">Eat best</string>
+    <string name="enjoy_restaurent_quality_meals_nat_home">Enjoy Restaurent Quality meals\nat home</string>
+    <string name="Login">LOGIN</string>
+    <string name="area_name_residence">Area Name/ Residence</string>
+    <string name="house_no">House No.</string>
 
     <string-array name="spinner_items">
         <item>English</item>

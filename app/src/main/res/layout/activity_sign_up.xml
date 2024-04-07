@@ -23,7 +23,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/redbuttongradient"
-        android:text="Register"
+        android:text="@string/Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -36,7 +36,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+
         android:hint="Area Name/ Residence"
+
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="@+id/Lastname"
         app:layout_constraintHorizontal_bias="1.0"
