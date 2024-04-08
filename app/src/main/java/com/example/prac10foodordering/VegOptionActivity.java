@@ -28,7 +28,7 @@ public class VegOptionActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         List<Restaurant> restaurantList = new ArrayList<>();
-        restaurantList.add(new Restaurant(R.drawable.bambayya_pav_bhaji, "pav Bhaji", "₹100"));
+        restaurantList.add(new Restaurant(R.drawable.bambayya_pav_bhaji, "Pav Bhaji", "₹100"));
         restaurantList.add(new Restaurant(R.drawable.dosa, "Dosa", "₹150"));
         restaurantList.add(new Restaurant(R.drawable.cholebhature,  "Chole Bhature", "₹200"));
         restaurantList.add(new Restaurant(R.drawable.chaat,  "Chaat corner", "₹250"));
@@ -39,7 +39,7 @@ public class VegOptionActivity extends AppCompatActivity {
             public void onBuyNowClick(int position) {
 
                 Intent intent;
-                intent = new Intent(VegOptionActivity.this, PavbhajiPage.class);
+                intent = new Intent(VegOptionActivity.this, PavBhajiActivity.class);
                 startActivity(intent);
             }
         });

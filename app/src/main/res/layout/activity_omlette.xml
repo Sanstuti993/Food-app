@@ -14,7 +14,7 @@
         android:layout_marginTop="80dp"
         android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/biryani"
+        app:srcCompat="@drawable/omelett"
         tools:layout_editor_absoluteX="0dp" />
 
     <ImageButton

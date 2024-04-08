@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Prac10FoodOrdering"
         tools:targetApi="31">
         <activity
+            android:name=".PavBhajiActivity"
+            android:exported="false" />
+        <activity
             android:name=".Burger"
             android:exported="false" />
         <activity
@@ -20,18 +23,6 @@
             android:exported="false" />
         <activity
             android:name=".Biryani"
-            android:exported="false" />
-        <activity
-            android:name=".chaat"
-            android:exported="false" />
-        <activity
-            android:name=".DosaPageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VegFoodPageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NonVegFoodPage"
             android:exported="false" />
         <activity
             android:name=".EggOptionActivity"

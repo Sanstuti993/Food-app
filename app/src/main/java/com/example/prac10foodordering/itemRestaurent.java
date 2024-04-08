@@ -16,7 +16,7 @@ public class itemRestaurent extends AppCompatActivity implements RestaurantAdapt
 
     @Override
     public void onBuyNowClick(int position) {
-        startActivity(new Intent(itemRestaurent.this, VegFoodPageActivity.class));
+        startActivity(new Intent(itemRestaurent.this, PavBhajiActivity.class));
         finish();
     }
 }
