@@ -26,6 +26,15 @@
     <string name="area_name_residence">Area Name/Residence</string>
     <string name="house_no">House No.</string>
     <string name="New_user">New User</string>
+    <string name="city">City</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="email">Email Id</string>
+    <string name="phone">Phone No.</string>
+    <string name="pincode">PIN Code</string>
+    <string name="egg">Egg</string>
+    <string name="vegnonveg">Veg-Non Veg</string>
+    <string name="vegoptions">Veg Options</string>
+    <string name="view">View</string>
 
 
     <string-array name="spinner_items">

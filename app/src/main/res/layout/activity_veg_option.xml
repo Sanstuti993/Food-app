@@ -51,7 +51,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="117dp"
-        android:text="Veg Options"
+        android:text="@string/vegoptions"
         android:textColor="#383A38"
         android:textSize="24sp"
         android:textStyle="bold" />

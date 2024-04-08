@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="1000dp"
     android:layout_margin="8dp"
-    android:background="@drawable/ic_launcher_background"
+    android:background="@drawable/vegnonvegmix"
     android:elevation="4dp">
 
     <ImageButton
         android:id="@+id/Back4"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="348dp"
         android:background="@color/white"
-        android:scaleType="fitCenter"
         android:onClick="onBack4ButtonClick"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/angle_left_solid"
-         />
+        app:srcCompat="@drawable/angle_left_solid" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
@@ -32,6 +32,20 @@
         android:layout_marginBottom="8dp"
         android:clipToPadding="false"
         android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/vegnonveg"
+        android:textColor="#383A38"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 
 </androidx.cardview.widget.CardView>
