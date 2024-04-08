@@ -35,7 +35,7 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/BuyNow"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
@@ -43,7 +43,6 @@
             android:layout_marginEnd="288dp"
             android:onClick="onBuyNowButtonClick"
             android:background="@drawable/redbuttongradient"
-
             android:text="Buy Now" />
 
         <TextView
