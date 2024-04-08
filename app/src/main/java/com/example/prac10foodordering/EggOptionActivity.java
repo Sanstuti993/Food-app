@@ -28,11 +28,11 @@ public class EggOptionActivity extends AppCompatActivity {
 
         List<Restaurant> restaurantList = new ArrayList<>();
 
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 1", "₹100"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 2", "₹150"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 3", "₹200"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 4", "₹250"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 5", "₹300"));
+        restaurantList.add(new Restaurant(R.drawable.omelett, "Omelette", "₹150"));
+        restaurantList.add(new Restaurant(R.drawable.eggburji, "Egg Bhurji", "₹150"));
+        restaurantList.add(new Restaurant(R.drawable.eggsscrambled, "Scrambled Eggs", "₹150"));
+        //restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 4", "₹250"));
+       // restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 5", "₹300"));
 
 
         // Create RecyclerView adapter

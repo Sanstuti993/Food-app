@@ -26,11 +26,11 @@ public class NonVegOptionActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         List<Restaurant> restaurantList = new ArrayList<>();
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Non Veg Food 1", "₹100"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Non Veg Food 2", "₹150"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Non Veg Food 3", "₹200"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Non Veg Food 4", "₹250"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Non Veg Food 5", "₹300"));
+        restaurantList.add(new Restaurant(R.drawable.biryani, "Briyani", "₹300"));
+        restaurantList.add(new Restaurant(R.drawable.chickenwing, "Chicken Wings", "₹150"));
+        restaurantList.add(new Restaurant(R.drawable.chickentikkamasalaa, "Chicken Tikka Masala", "₹200"));
+        restaurantList.add(new Restaurant(R.drawable.hotdogs, "Hot Dogs", "₹250"));
+        //restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Non Veg Food 5", "₹300"));
 
         adapter = new RestaurantAdapter(restaurantList);
 

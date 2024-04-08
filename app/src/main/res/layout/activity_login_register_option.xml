@@ -8,25 +8,26 @@
     android:background="@drawable/bg2">
 
     <View
+        android:id="@+id/semiTransparentView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#80FFFFFF"
-    android:id="@+id/semiTransparentView" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="85dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="88dp"
         android:width="380dp"
         android:background="@drawable/redbuttongradient"
         android:onClick="onLoginButtonClick"
-
-
         android:text="LOGIN"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RegisterButton" />
 
@@ -34,33 +35,16 @@
         android:id="@+id/RegisterButton"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-<<<<<<< Updated upstream
-
-        android:layout_marginTop="100dp"
-        android:width="380dp"
-        android:background="@drawable/redbuttongradient"
-        android:onClick="onRegisterButtonClick"
-        android:text="New User??"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login" />
-
-
-=======
-        android:layout_marginTop="175dp"
+        android:layout_marginTop="196dp"
         android:width="380dp"
         android:background="@drawable/redbuttongradient"
         android:onClick="onRegisterButtonClick"
         android:text="@string/New_user"
-
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
->>>>>>> Stashed changes
+
 </androidx.constraintlayout.widget.ConstraintLayout>

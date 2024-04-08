@@ -8,23 +8,25 @@
 <!--    android:background="@drawable/ic_launcher_background"-->
 <!--    android:elevation="4dp">-->
 
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="8dp"
-    android:background="@color/white"
-    android:elevation="4dp">
+    android:background="@drawable/vegbutton"
+    >
 
     <ImageButton
         android:id="@+id/Back3"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="348dp"
+        android:layout_marginEnd="83dp"
+        android:layout_toStartOf="@+id/textView6"
         android:background="@color/white"
-        android:scaleType="fitCenter"
         android:onClick="onBack3ButtonClick"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/angle_left_solid" />
@@ -34,13 +36,26 @@
         android:layout_width="match_parent"
         android:layout_height="1000dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:onClick="onItemClick"
         android:clipToPadding="false"
+        android:onClick="onItemClick"
         android:padding="8dp" />
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="117dp"
+        android:text="Veg Options"
+        android:textColor="#383A38"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-<!--</androidx.cardview.widget.CardView>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
 </RelativeLayout>

@@ -16,13 +16,20 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_marginTop="38dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/logo_foreground" />
+            app:srcCompat="@drawable/logo1" />
+        <View
+            android:id="@+id/semiTransparentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80FFFFFF"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="85dp" />
 
 
 
@@ -39,11 +46,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/PinCode" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#33FF0000"
-            android:id="@+id/semiTransparentView1" />
+
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="380dp"
@@ -66,6 +69,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
+            android:textColorHint="#636160"
+            android:textStyle="bold"
             android:ems="10"
             android:hint="@string/house_no"
             android:inputType="textEmailAddress"
@@ -79,6 +84,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
+            android:textColorHint="#636160"
+            android:textStyle="bold"
             android:ems="10"
             android:hint="City"
             android:inputType="textEmailAddress"
@@ -91,9 +98,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
+            android:textColorHint="#636160"
             android:ems="10"
             android:hint="First Name"
             android:inputType="text"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -107,6 +116,8 @@
             android:layout_marginTop="12dp"
             android:ems="10"
             android:hint="Last Name"
+            android:textColorHint="#636160"
+            android:textStyle="bold"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -120,6 +131,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:ems="10"
+            android:textColorHint="#636160"
+            android:textStyle="bold"
             android:hint="D.O.B"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
@@ -146,6 +159,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
+            android:textColorHint="#636160"
+            android:textStyle="bold"
             android:ems="10"
             android:hint="Password"
             android:inputType="numberPassword"
@@ -159,6 +174,8 @@
             android:layout_height="45dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
+            android:textColorHint="#636160"
+            android:textStyle="bold"
             android:ems="10"
             android:hint="Confirm Password"
             android:inputType="numberPassword"
@@ -170,6 +187,8 @@
             android:id="@+id/editTextTextEmailAddress2"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
+            android:textColorHint="#636160"
+            android:textStyle="bold"
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:ems="10"
@@ -184,6 +203,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
+            android:textColorHint="#636160"
+            android:textStyle="bold"
             android:ems="10"
             android:hint="PhoneNo."
             android:inputType="phone"
@@ -194,6 +215,8 @@
             android:id="@+id/PinCode"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
+            android:textColorHint="#636160"
+            android:textStyle="bold"
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:ems="10"

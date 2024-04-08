@@ -30,11 +30,11 @@ public class MixOptionActivity extends AppCompatActivity {
 
         List<Restaurant> restaurantList = new ArrayList<>();
 
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 1", "₹100"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 2", "₹150"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 3", "₹200"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 4", "₹250"));
-        restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 5", "₹300"));
+        restaurantList.add(new Restaurant(R.drawable.pizza, "Pizza", "₹500"));
+        restaurantList.add(new Restaurant(R.drawable.burger, "Burger", "₹250"));
+        restaurantList.add(new Restaurant(R.drawable.wraps, "Wraps", "₹200"));
+        restaurantList.add(new Restaurant(R.drawable.momos, "Momos", "₹250"));
+        //restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Mix Food 5", "₹300"));
 
 
         // Create RecyclerView adapter
