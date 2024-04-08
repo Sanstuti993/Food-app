@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this,
-                R.array.spinner_items, // assuming you have defined a string array resource for spinner items
+                R.array.spinner_items,
                 android.R.layout.simple_spinner_item
         );
 
@@ -58,7 +58,6 @@ public class LoginActivity extends AppCompatActivity {
 
             if (user.getEmail().equals(username) && user.getPassword().equals(password)) {
 
-                Toast.makeText(LoginActivity.this, "Valid", Toast.LENGTH_LONG).show();
                 isValidUser = true;
 
                 startActivity(new Intent(this, FoodChoiceActivity.class));

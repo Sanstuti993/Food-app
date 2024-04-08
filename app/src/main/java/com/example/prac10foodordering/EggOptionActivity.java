@@ -36,7 +36,14 @@ public class EggOptionActivity extends AppCompatActivity {
 
 
         // Create RecyclerView adapter
-        adapter = new RestaurantAdapter(restaurantList);
+        adapter = new RestaurantAdapter(restaurantList, new RestaurantAdapter.OnBuyNowClickListener() {
+            @Override
+            public void onBuyNowClick(int position) {
+
+                Intent intent = new Intent(EggOptionActivity.this, Omlette.class);
+                startActivity(intent);
+            }
+        });
 
         // Set adapter to RecyclerView
         recyclerView.setAdapter(adapter);

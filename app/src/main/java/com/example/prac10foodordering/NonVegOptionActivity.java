@@ -32,7 +32,15 @@ public class NonVegOptionActivity extends AppCompatActivity {
         restaurantList.add(new Restaurant(R.drawable.hotdogs, "Hot Dogs", "₹250"));
         //restaurantList.add(new Restaurant(R.drawable.ic_launcher_foreground, "Non Veg Food 5", "₹300"));
 
-        adapter = new RestaurantAdapter(restaurantList);
+        adapter = new RestaurantAdapter(restaurantList, new RestaurantAdapter.OnBuyNowClickListener() {
+            @Override
+            public void onBuyNowClick(int position) {
+                // Handle Buy Now button click here
+                // For example, start a new activity or show a dialog
+                Intent intent = new Intent(NonVegOptionActivity.this,Biryani.class);
+                startActivity(intent);
+            }
+        });
 
         recyclerView.setAdapter(adapter);
     }

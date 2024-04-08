@@ -36,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_marginTop="196dp"
+
         android:width="380dp"
         android:background="@drawable/redbuttongradient"
         android:onClick="onRegisterButtonClick"

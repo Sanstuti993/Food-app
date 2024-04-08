@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,9 +16,15 @@ import java.util.List;
 
 public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder> {
     private List<Restaurant> restaurantList;
+    private OnBuyNowClickListener onBuyNowClickListener;
 
-    public RestaurantAdapter(List<Restaurant> restaurantList) {
+    public RestaurantAdapter(List<Restaurant> restaurantList,OnBuyNowClickListener onBuyNowClickListener) {
         this.restaurantList = restaurantList;
+        this.onBuyNowClickListener = onBuyNowClickListener;
+    }
+
+    public interface OnBuyNowClickListener {
+        void onBuyNowClick(int position);
     }
 
     @NonNull
@@ -35,12 +42,12 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
         holder.foodName.setText(restaurant.getFoodName());
         holder.textPrice.setText(restaurant.getPrice());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+        holder.buttonBuyNow.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                // Start an implicit intent to open Google
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.zomato.com"));
-                view.getContext().startActivity(intent);
+            public void onClick(View v) {
+                if (onBuyNowClickListener != null) {
+                    onBuyNowClickListener.onBuyNowClick(position);
+                }
             }
         });
     }
@@ -53,12 +60,14 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
     public static class RestaurantViewHolder extends RecyclerView.ViewHolder {
         public ImageView imageRestaurant;
         public TextView restaurantName, foodName, textPrice;
+        public Button buttonBuyNow;
 
         public RestaurantViewHolder(View itemView) {
             super(itemView);
             imageRestaurant = itemView.findViewById(R.id.image_restaurant);
             foodName = itemView.findViewById(R.id.FoodName);
             textPrice = itemView.findViewById(R.id.text_price);
+            buttonBuyNow = itemView.findViewById(R.id.BuyNow);
         }
     }
 }

@@ -25,5 +25,7 @@
     <string name="Eat_best">Eat best</string>
     <string name="enjoy_restaurent_quality_meals_nat_home">Disfrute de comidas de calidad en el restaurante.</string>
     <string name="Login">acceso</string>
+    <string name="area_name_residence">Area Name/ Residence</string>
+    <string name="house_no">House No.</string>
     <string name="New_user">¿Nueva usuaria ??</string>
 </resources>

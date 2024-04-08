@@ -34,7 +34,15 @@ public class VegOptionActivity extends AppCompatActivity {
         restaurantList.add(new Restaurant(R.drawable.chaat,  "Chaat corner", "₹250"));
 
 
-        adapter = new RestaurantAdapter(restaurantList);
+        adapter = new RestaurantAdapter(restaurantList, new RestaurantAdapter.OnBuyNowClickListener() {
+            @Override
+            public void onBuyNowClick(int position) {
+
+                Intent intent;
+                intent = new Intent(VegOptionActivity.this, PavbhajiPage.class);
+                startActivity(intent);
+            }
+        });
 
         recyclerView.setAdapter(adapter);
 
@@ -43,11 +51,5 @@ public class VegOptionActivity extends AppCompatActivity {
         startActivity(new Intent(this, FoodChoiceActivity.class));
         finish();
     }
-    public void onItemClick(View view) {
-        Uri uri = Uri.parse("https://www.google.com");
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
-    }
-
 
 }
