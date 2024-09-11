@@ -35,6 +35,7 @@
     <string name="vegnonveg">Veg-Non Veg</string>
     <string name="vegoptions">Veg Options</string>
     <string name="view">View</string>
+    <string name="Aboutthedish">Sobre el plato</string>
 
 
     <string-array name="spinner_items">
